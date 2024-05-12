@@ -2,7 +2,104 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-style: normal;
+}
+
+:root{
+  --bg-color: #081b29;
+  --second-bg-color: #112e42;
+  --text-color: #ededed;
+  --main-color: #00abf0; 
+}
+
+html{
+  font-size: 62.50%;
+  overflow-x: hidden;
+}
+
+body{
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+/* Header Style */
+
+.header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 8%;
+  z-index: 100;
+}
+
+.logo{
+  color: var(--text-color);
+  font-size: 2.5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+#menu-icon{
+  color: var(--text-color);
+  font-size: 3.5rem;
+  cursor: pointer;
+  display: none;
+}
+
+.navbar a{
+  position: relative;
+  color: var(--text-color);
+  font-size: 1.8rem;
+  margin-left: 3.5rem;
+  font-weight: 600;
+  transition: .3s linear;
+  animation: menu .8s ease backwards;
+  animation-delay: calc(.3s * var(--i));
+}
+
+.navbar a:hover,
+.navbar a.active{
+  color: var(--main-color);
+  
+}
+
+.link::before{
+  content: '';
+  position: absolute;
+  background-color: var(--main-color);
+  width: 100%;
+  height: 0.2rem;
+  top:0;
+  left: 0;
+  margin-top: -0.5rem;
+  transform: scaleX(0);
+  transform-origin: bottom left;
+  transition: transform 0.6s ease-in;
+}
+
+.navbar a:hover::before{
+  transform: scaleX(1);
+  transform-origin: bottom center;
+}
+
+@keyframes menu {
+  0%{
+    opacity: 0;
+    transform: translateZ(180px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateZ(0px);
+  }
 }
