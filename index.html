@@ -202,14 +202,14 @@
     <h2 class="heading">Recent <span>Projects</span></h2>
     
     <ul class="project_categories">
-      <li class="active">All</li>
-      <li>Frontend</li>
-      <li>Backend</li>
-      <li>Fullstack</li>
+      <li class="active" data-filter="*">All</li>
+      <li data-filter=".frontend">Frontend</li>
+      <li data-filter=".backend">Backend</li>
+      <li data-filter=".fullstack">Fullstack</li>
     </ul>
 
     <div class="container projects_container">
-      <article class="project">
+      <article class="project mix fullstack" data-order="1">
         <div class="project_image">
           <img src="Images/programmer.png" alt="Project Image">
         </div>
@@ -223,7 +223,7 @@
         </div>
       </article>
 
-      <article class="project">
+      <article class="project mix frontend" data-order="2">
         <div class="project_image">
           <img src="Images/programmer.png" alt="Project Image">
         </div>
@@ -237,7 +237,7 @@
         </div>
       </article>
 
-      <article class="project">
+      <article class="project mix frontend" data-order="3">
         <div class="project_image">
           <img src="Images/programmer.png" alt="Project Image">
         </div>
@@ -251,7 +251,7 @@
         </div>
       </article>
 
-      <article class="project">
+      <article class="project mix backend" data-order="4">
         <div class="project_image">
           <img src="Images/programmer.png" alt="Project Image">
         </div>
@@ -266,6 +266,9 @@
       </article>
     </div>
   </section>
-  
+
+  <!-- JS Files -->
+  <script src="mixitup-v3/patrickkunka-mixitup-61dac05/dist/mixitup.min.js"></script>
+  <script src="index.js"></script>
 </body>
 </html>
