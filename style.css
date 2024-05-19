@@ -557,3 +557,144 @@ span{
 .skills-column:nth-child(2) .skills-content .progress:nth-child(5) .bar span{
   width: 60%;
 }
+
+/* Project Section Design */
+.project_categories{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin: 4rem 0 2.5rem;
+  flex-wrap: wrap;
+}
+
+.project_categories li{
+  position: relative;
+  border: .2rem solid var(--main-color);
+  padding: 0.6rem 1.5rem;
+  border-radius: .6rem;
+  font-weight: 600;
+  font-size: 1.2rem;
+  margin-bottom: 5rem;
+  cursor: pointer;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.project_categories li::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: var(--main-color);
+  width: 0;
+  height: 100%;
+  z-index: -1;
+  transition: .5s linear;
+}
+
+.project_categories li:hover::before,
+.project_categories li.active::before{
+  width: 100%;
+}
+
+.project_categories li:hover{
+  color: var(--bg-color);
+  font-weight: 600;
+}
+
+.project_image img{
+  height: auto;
+  max-height: 15rem;
+  margin-bottom: 1.5rem;
+  border-radius: .6rem;
+  overflow: hidden;
+}
+
+.projects_container{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
+  gap: 8rem;
+}
+
+.project{
+  position: relative;
+  border: .1rem solid var(--main-color);
+  padding: 1.4rem;
+  width: 25rem;
+  border-radius: .6rem;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.project::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: var(--second-bg-color);
+  z-index: -1;
+  transition: .5s linear;
+}
+
+.project:hover::before{
+  width: 100%;
+}
+
+.project h3{
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  
+}
+
+.project p{
+  font-size: 1.2rem;
+  margin:0.5rem 0 1.5rem;
+  line-height: 2rem;
+}
+
+.project .project__cta{
+  margin-bottom: 1.2rem;
+  display: flex;
+}
+
+.project .project__cta a{
+  color: var(--text-color);
+  font-size: 1.3rem;
+  font-weight: 600;
+  border: .1rem solid var(--main-color);
+  padding: .4rem;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.project .project__cta a::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  background: var(--main-color);
+  z-index: -1;
+  transition: .6s linear;
+}
+
+.project .project__cta a:hover::before{
+  height: 100%;
+}
+
+.project .project__cta a:hover{
+  color: var(--bg-color);
+}
+
+.project .project__cta .bxl-github{
+  margin-right: .5rem;
+  position: relative;
+  top: .2rem;
+  font-size: 1.5rem;
+}
