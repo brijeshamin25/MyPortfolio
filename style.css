@@ -41,6 +41,11 @@ body{
   align-items: center;
   padding: 2rem 8%;
   z-index: 100;
+  transition: .5s linear;
+}
+
+.header.sticky{
+  background: var(--bg-color);
 }
 
 .logo{
