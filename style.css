@@ -125,6 +125,7 @@ section{
 
 .home-content{
   max-width: 60rem;
+  z-index: 99;
 }
 
 .home-content h1{
@@ -927,4 +928,30 @@ span{
   .navbar a:hover::before{
     transform-origin: bottom left;
   }
+
+  .home{
+    background-size: 52rem;
+    background-position: bottom right;
+  }
+
+  .home-image-hover{
+    pointer-events: none;
+    background: var(--bg-color);
+    opacity: .6;
+    width: 48%;
+  }
+
+  .home-content p{
+    width: 50rem;
+  }
+
+  .projects_container{
+    /* display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr)); */
+    gap: 3rem;
+  }
+
+  /* .home-content h1{
+    font-size: 5.5rem;
+  } */
 }
