@@ -992,3 +992,44 @@ span{
     margin-left: -1.5rem;
   }
 }
+
+@media (max-width: 462px){
+  .home-content h1{
+    font-size: 5.2rem;
+  }
+
+  .education{
+    padding: 10rem 4% 5rem 5%;
+  }
+
+  .contact form .input-box .input-field{
+    width: 100%;
+  }
+
+  .footer{
+    flex-direction: column-reverse;
+  }
+
+  .footer p{
+    margin-top: 2rem;
+  }
+
+  .home{
+    background-size: 50rem;
+    background-position: bottom right -30px;
+  }
+
+  .home .home-content{
+    margin-top: -8rem;
+  }
+
+  .btn-box{
+    gap: 2rem;
+    width: 27rem;
+    margin-left: -.5rem;
+  }
+
+  .home-image-hover{
+    width: 63%;
+  }
+}
