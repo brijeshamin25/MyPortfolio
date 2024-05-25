@@ -733,6 +733,7 @@ span{
   position: relative;
   width: 49%;
   margin: 0.8rem 0;
+  z-index: 1;
 }
 
 .contact form .input-box .input-field input,
@@ -745,6 +746,7 @@ span{
   background: transparent;
   border: .2rem solid var(--main-color);
   border-radius: .6rem;
+  z-index: 1;
 }
 
 .contact form .input-box .input-field input::placeholder,
@@ -775,6 +777,7 @@ span{
   position: relative;
   margin: .8rem 0 2.7rem;
   display: flex;
+  z-index: 1;
 }
 
 .contact form .textarea-field textarea{
