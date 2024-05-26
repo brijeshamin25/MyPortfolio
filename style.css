@@ -619,22 +619,32 @@ span{
 
 /* Project Section Design */
 .project_categories{
-  display: flex;
+  position: relative;
+  /* top: 10rem; */
+  left: 5rem;
+  display: inline-flex;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
-  margin: 4rem 0 2.5rem;
+  gap: 1.2rem;
+  margin: 4rem 0 10rem;
   flex-wrap: wrap;
+}
+
+.projects h2{
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .project_categories li{
   position: relative;
+  top: 10rem;
   border: .2rem solid var(--main-color);
   padding: 0.6rem 1.5rem;
   border-radius: .6rem;
   font-weight: 600;
   font-size: 1.2rem;
-  margin-bottom: 5rem;
+  margin-bottom: 10rem;
   cursor: pointer;
   z-index: 1;
   overflow: hidden;
@@ -671,6 +681,7 @@ span{
 }
 
 .projects_container{
+  position: relative;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
   gap: 8rem;
@@ -925,7 +936,8 @@ span{
 
 .about.show-animate .animate.scroll,
 .education.show-animate .animate.scroll,
-.skills.show-animate .animate.scroll{
+.skills.show-animate .animate.scroll,
+.projects.show-animate .animate.scroll{
   transition-delay: calc(.3s * var(--i));
   width: 0;
 }
@@ -935,6 +947,12 @@ span{
 @media (max-width: 1200px) {
   html{
     font-size: 55%;
+  }
+  .project_categories{
+    top: 5rem;
+    left: 9rem;
+    transform: translateX(-50%);
+    margin-bottom: 12rem;
   }
 }
 
@@ -954,6 +972,7 @@ span{
   .footer{
     padding: 2rem 4%;
   }
+  
 }
 
 @media (max-width: 768px){
@@ -1041,6 +1060,13 @@ span{
 
   .projects_container{
     gap: 3rem;
+  }
+
+  .project_categories{
+    top: 5rem;
+    left: 2rem;
+    transform: translateX(-50%);
+    margin-bottom: 10rem;
   }
 }
 
@@ -1133,6 +1159,13 @@ span{
     grid-template-columns: repeat(auto-fill);
     margin-left: -1rem;
   }
+
+  .project_categories{
+    top: -5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: auto;
+  }
 }
 
 @media (max-width: 375px){
@@ -1168,6 +1201,11 @@ span{
     gap: 8rem;
     margin-left: 9rem;
   }
+
+  .project_categories{
+    top: -5rem;
+    /* margin-bottom: -5rem; */
+  }
 }
 
 @media (max-width: 320px){
@@ -1176,6 +1214,13 @@ span{
     grid-template-columns: repeat(auto-fill);
     gap: 8rem; */
     margin-left: 5.7rem;
+  }
+
+  .project_categories{
+    top: -5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    /* margin-bottom: -5rem; */
   }
 }
 
