@@ -103,7 +103,7 @@ body{
   transform-origin: bottom center;
 }
 
-/* @keyframes menu {
+@keyframes menu {
   0%{
     opacity: 0;
     transform: translateZ(180px);
@@ -112,7 +112,7 @@ body{
     opacity: 1;
     transform: translateZ(0px);
   }
-} */
+}
 
 /* Home Section Design */
 section{
@@ -315,6 +315,7 @@ section{
 }
 
 .heading{
+  position: relative;
   font-size: 5rem;
   margin-bottom: 3rem;
   text-align: center;
@@ -365,10 +366,14 @@ span{
 }
 
 .about-content h3{
+  position: relative;
+  display: inline-block;
   font-size: 2.6rem;
+  font-weight: 600;
 }
 
 .about-content p{
+  position: relative;
   font-size: 1.6rem;
   margin: 2rem 0 3rem;
 }
@@ -379,7 +384,7 @@ span{
 }
 
 .btn-box.btns a{
-  width: 20rem;
+  width: 18rem;
 }
 
 .btn-box.btns .bx-download{
@@ -890,6 +895,17 @@ span{
 .home.show-animate .animate{
   animation: showRight 1s linear forwards;
   animation-delay: calc(.3s * var(--i));
+}
+
+.animate.scroll{
+  transition: 1s ease;
+  transition-delay: calc(.3s / var(--i));
+  animation: none;
+}
+
+.about.show-animate .animate.scroll{
+  transition-delay: calc(.3s * var(--i));
+  width: 0;
 }
 
 
