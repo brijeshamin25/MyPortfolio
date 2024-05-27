@@ -735,6 +735,7 @@ span{
 .project .project__cta{
   margin-bottom: 1.2rem;
   display: flex;
+  justify-content: space-between;
 }
 
 .project .project__cta a{
@@ -746,7 +747,7 @@ span{
   position: relative;
   overflow: hidden;
   z-index: 1;
-  margin-right: 5rem;
+  /* margin-right: 2rem; */
 }
 
 .project .project__cta a::before{
