@@ -746,6 +746,7 @@ span{
   position: relative;
   overflow: hidden;
   z-index: 1;
+  margin-right: 2rem;
 }
 
 .project .project__cta a::before{
@@ -768,7 +769,8 @@ span{
   color: var(--bg-color);
 }
 
-.project .project__cta .bxl-github{
+.project .project__cta .bxl-github , 
+.project .project__cta .bx-desktop{
   margin-right: .5rem;
   position: relative;
   top: .2rem;
