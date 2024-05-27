@@ -975,7 +975,18 @@ section:nth-child(odd) .animate.scroll{
     top: 5rem;
     left: 9rem;
     transform: translateX(-50%);
-    margin-bottom: 12rem;
+    margin-bottom: 12rem; 
+  }
+}
+
+@media (max-width: 1024px) {
+  .home{
+    background-size: 66% ;
+    background-position: bottom right -10%;
+  }
+
+  .home-image-hover{
+    width: 50%;
   }
 }
 
@@ -995,7 +1006,6 @@ section:nth-child(odd) .animate.scroll{
   .footer{
     padding: 2rem 4%;
   }
-  
 }
 
 @media (max-width: 850px){
@@ -1072,15 +1082,15 @@ section:nth-child(odd) .animate.scroll{
   }
 
   .home{
-    background-size: 52rem;
-    background-position: bottom right;
+    background-size: 75%;
+    background-position: bottom right -20%;
   }
 
   .home-image-hover{
     pointer-events: none;
     background: var(--bg-color);
     opacity: .6;
-    width: 48%;
+    width: 60%;
   }
 
   .home-content p{
@@ -1144,7 +1154,7 @@ section:nth-child(odd) .animate.scroll{
 
 @media (max-width: 462px){
   .home-content h1{
-    font-size: 5.2rem;
+    font-size: 6rem;
   }
 
   .education{
@@ -1165,8 +1175,8 @@ section:nth-child(odd) .animate.scroll{
   }
 
   .home{
-    background-size: 41rem;
-    background-position: bottom right -30px;
+    background-size: 76% 58%;
+    background-position: bottom right -28px;
   }
 
   .home .home-content{
@@ -1174,7 +1184,7 @@ section:nth-child(odd) .animate.scroll{
   }
 
   .home-sci{
-    margin-left: -2rem;
+    margin-left: -3rem;
   }
 
   .btn-box{
@@ -1204,7 +1214,7 @@ section:nth-child(odd) .animate.scroll{
 @media (max-width: 375px){
   .home{
     justify-content: center;
-    background-size: 36rem;
+    background-size: 36rem 54%;
   }
 
   .home-content{
@@ -1222,6 +1232,10 @@ section:nth-child(odd) .animate.scroll{
   /* .home-image-hover{
     width: 70%;
   } */
+
+  .home-sci{
+    margin-left: -30rem;
+  }
 
   .home-sci a{
     width: 30px;
@@ -1244,7 +1258,12 @@ section:nth-child(odd) .animate.scroll{
 @media (max-width: 320px){
   .home{
     justify-content: center;
-    background-size: 32rem;
+    background-size: 30.4rem 50%;
+    background-position: bottom right -2.4rem;
+  }
+  .home-sci{
+    margin-left: -22rem;
+    gap: .1rem;
   }
   .projects_container{
     /* display: grid;
