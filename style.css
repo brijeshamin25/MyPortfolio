@@ -636,6 +636,10 @@ span{
   flex-wrap: wrap;
 }
 
+.projects{
+  margin-bottom: 6rem;
+}
+
 .projects h2{
   position: relative;
   left: 50%;
